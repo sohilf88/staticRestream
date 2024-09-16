@@ -1,4 +1,5 @@
 "use client"
+import HlsPlayer from "./components/hslplayer"
 
 function User() {
 
@@ -10,14 +11,14 @@ return (
  
   <div className={`grid grid-cols-3 lg:grid-cols-4 gap-y-6 gap-x-2  mx-6 mt-20 `}>
       
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-1" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-2" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-3" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-4" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-5" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-6" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-7" frameborder="0" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="http://13.235.85.102:5080/live/play.html?id=camera-8" frameborder="0" allowfullscreen></iframe>
+   <HlsPlayer  url={"http://13.235.85.102:5080/live/streams/camera-1.m3u8"}/>
+   <HlsPlayer url={"https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"}/>
+   <HlsPlayer url={"http://13.235.85.102:5080/live/streams/camera-3.m3u8"}/>
+   <HlsPlayer url={"http://13.235.85.102:5080/live/streams/camera-4.m3u8"}/>
+   <HlsPlayer url={"http://13.235.85.102:5080/live/streams/camera-5.m3u8"}/>
+   <HlsPlayer url={"http://13.235.85.102:5080/live/streams/camera-6.m3u8"}/>
+   <HlsPlayer url={"http://13.235.85.102:5080/live/streams/camera-7.m3u8"}/>
+   <HlsPlayer url={"http://13.235.85.102:5080/live/streams/camera-8.m3u8"}/>
    
   </div>
      

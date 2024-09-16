@@ -16,7 +16,7 @@ function HlsPlayer({url}) {
         <div className="player-wrapper">
          <ReactPlayer
             className="react-player"
-            playing
+            playing={true}
             muted
             url={url}
             // url="https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
